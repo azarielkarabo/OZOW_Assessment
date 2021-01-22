@@ -9,7 +9,7 @@ namespace ConsoleApp1
 
     public class InputText
     {
-        protected List<char> InputTextInChars { get; set; }
+        private List<char> InputTextInChars { get; set; }
 
         public InputText(string input)
         {
@@ -18,8 +18,7 @@ namespace ConsoleApp1
 
         public void DisplayOutput()
         {
-
-            OrderChars(); /*Orders chars*/
+            OrderChars();
 
             Console.Write("output: ");
             InputTextInChars.ForEach(chhar => { Console.Write($"{chhar}"); });
